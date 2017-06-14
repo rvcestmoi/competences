@@ -1,10 +1,15 @@
+<?php 
+//Initialisation des variables
+$active='class="active"';
+?>
+
 <header>
     <div class ="container">
         <div class="row">
             <div class="col-xs-12  visible-xs"> <img class="img-responsive" src="img/headerXs.png" alt="header" style="width: 100%"> </div>
-            <div class="col-sm-12 visible-sm "> <img class="img-responsive" src="img/headerSm.png" alt="header" style="width: 100%"> </div>
-            <div class="col-md-12 visible-md"><img class="img-responsive" src="img/headerMd.png" alt="header" style="width: 100%"></div>
-            <div class="col-lg-9 visible-lg"><img class="img-responsive" src="img/headerLgetMd.png" alt="header" style="width: 100%"> </div>
+            <div class="col-xs-12 visible-sm "> <img class="img-responsive" src="img/headerSm.png" alt="header" style="width: 100%"> </div>
+            <div class="col-xs-12 visible-md"><img class="img-responsive" src="img/headerMd.png" alt="header" style="width: 100%"></div>
+            <div class="col-xs-12 visible-lg"><img class="img-responsive" src="img/headerLgetMd.png" alt="header" style="width: 100%"> </div>
 
         </div>
     </div>
@@ -17,11 +22,12 @@
         <nav class="navbar navbar-default">
             <div class="container">
                 <ul class="nav navbar-nav">
-                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 1) echo $active ?>><a href="?p=1">Accueil</a></li>
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 1) echo $active ?>><a href="?p=Accueil">Accueil</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 2) echo $active ?>><a href="?p=2">Présentation</a></li>                   
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 6) echo $active ?>><a href="?p=6">HTML/CSS</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 7) echo $active ?>><a href="?p=7">Javascript/JQuery</a></li>
-                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 8) echo $active ?>><a href="?p=8">PHP</a></li>
+                    
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 8) echo $active ?>><a href="?p=PHP">PHP</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 9) echo $active ?>><a href="?p=9">Analyse/Conception</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 10) echo $active ?>><a href="?p=10">Symfony 2</a></li>
 
