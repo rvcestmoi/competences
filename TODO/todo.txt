@@ -1,6 +1,11 @@
+
+statistiques
+
 PHP : recursivité arbre hierarrchique
 Travail sur des fichiers
 Utilisation de base de donnés utilisateur
+objet
+gestiond es cookies
 
 Javascripts
 recuperation de donnees
@@ -18,3 +23,8 @@ SQL IN EXIST
 Creation du base de donnés
 
 
+git
+
+namespace php
+
+analyse et conception
