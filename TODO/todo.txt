@@ -1,0 +1,20 @@
+PHP : recursivité arbre hierarrchique
+Travail sur des fichiers
+Utilisation de base de donnés utilisateur
+
+Javascripts
+recuperation de donnees
+Jquery sur tableau
+JSON
+API et donnees GPS
+
+
+classer les fichier dans des sous dossiers
+
+Presentation powerpoint rapide
+SQL IN EXIST
+
+
+Creation du base de donnés
+
+
