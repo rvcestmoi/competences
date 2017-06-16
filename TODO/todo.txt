@@ -28,3 +28,4 @@ git
 namespace php
 
 analyse et conception : ABsamic plus propre
+ajout des images par projet

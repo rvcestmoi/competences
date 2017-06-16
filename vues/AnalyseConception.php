@@ -11,8 +11,7 @@
                     //Récupération des fichiers
                     $dir = './vues/AnalyseConception';
                     $file = scandir($dir);
-                    $max = count($file);
-                   // echo "maxlmlmlkklm";
+                    $max = count($file);                   
                     echo'<ul';
                     //affichage et redirection des fichiers
                     for ($i = 2; $i < $max; $i++) {
@@ -26,7 +25,11 @@
                 </main>
             </div>
         </div>
-    </div><?php
+    </div>
+</div>
+    
+        
+        <?php
 
 /* 
  * To change this license header, choose License Headers in Project Properties.

@@ -11,8 +11,10 @@
         <title>Site web</title>
 
         <!-- Bootstrap -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>        
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.js"></script>        
+        <script src="js/bootstrap.js"></script>        
+        <script src="js/debounce.js"></script>
+        <script src="js/custom.js" ></script>        
         <link href="style/bootstrap.min.css"  rel="stylesheet"> 
         <link href=" style/style.css" rel="stylesheet">
 
