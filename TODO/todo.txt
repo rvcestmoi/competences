@@ -20,11 +20,11 @@ Presentation powerpoint rapide
 SQL IN EXIST
 
 
-Creation du base de donnés
+ OK Creation du base de donnés
 
 
 git
 
 namespace php
 
-analyse et conception
+analyse et conception : ABsamic plus propre

@@ -27,7 +27,7 @@ $active='class="active"';
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 6) echo $active ?>><a href="?p=6">HTML/CSS</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "Javascript") echo $active ?>><a href="?p=Javascript">Javascript/JQuery</a></li>                    
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "PHP") echo $active ?>><a href="?p=PHP">PHP</a></li>
-                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 9) echo $active ?>><a href="?p=9">Analyse/Conception</a></li>
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == "analyse") echo $active ?>><a href="?p=analyse">Analyse/Conception</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == 10) echo $active ?>><a href="?p=10">Symfony 2</a></li>
 
                 </ul>
