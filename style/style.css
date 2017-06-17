@@ -27,12 +27,43 @@ and open the template in the editor.
     width: 350px;
     line-height: 60px;
     text-decoration: none;
-    color: rgb(183,48,8);    
+    color: rgb(183,48,8);
+    text-align: center;    
 }
 #map {
     width: 100%;
     height: 400px;
     background-color: grey;
+}
 
+body{
+    
+    
+}
 
+.analyse{
+    height:   250px;
+}
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+header{
+    //margin-top: 20px;
+}
+
+main{
+    margin-left: 15px;
+    margin-right: 15px;
 }
