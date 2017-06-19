@@ -5,14 +5,14 @@
  */
 
 
-  jQuery(document).ready(function($) {
- 
-        $('#myCarousel').carousel({
-                interval: 5000
-        });
- 
-        //Handles the carousel thumbnails
-        $('[id^=carousel-selector-]').click(function () {
+jQuery(document).ready(function ($) {
+
+    $('#myCarousel').carousel({
+        interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function () {
         var id_selector = $(this).attr("id");
         try {
             var id = /-(\d+)$/.exec(id_selector)[1];
@@ -22,9 +22,20 @@
             console.log('Regex failed!', e);
         }
     });
-        // When the carousel slides, auto update the text
-        $('#myCarousel').on('slid.bs.carousel', function (e) {
-                 var id = $('.item.active').data('slide-number');
-                $('#carousel-text').html($('#slide-content-'+id).html());
-        });
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid.bs.carousel', function (e) {
+        var id = $('.item.active').data('slide-number');
+        $('#carousel-text').html($('#slide-content-' + id).html());
+    });
+});
+
+
+ajaxGet("http://localhost/Competences/data/films.json", function (reponse) {
+    // Transforme la réponse en tableau d'objets JavaScript
+    var films = JSON.parse(reponse);
+    // Affiche le titre de chaque film
+    films.forEach(function (film) {
+        console.log(film.titre);
+    })
+
 });

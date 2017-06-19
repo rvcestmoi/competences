@@ -127,6 +127,7 @@ m2=1</panel_attributes>
 -Titre
 -kilometrage
 -remarques
+-dateEntretien
 --
 -Vehicule
 -Utilisateur(FK*)</panel_attributes>

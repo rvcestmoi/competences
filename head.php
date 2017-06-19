@@ -21,7 +21,13 @@
         <script src="js/jquery.js"></script>        
         <script src="js/bootstrap.js"></script>        
         <script src="js/debounce.js"></script>
-        <script src="js/custom.js" ></script>        
+        <script src="js/ajax.js" ></script>  
+        <script src="js/custom.js" ></script>
+        <script src="js/json.js" ></script>
+        
+        
+        
+        
         <link href="style/bootstrap.min.css"  rel="stylesheet"> 
         <link href=" style/style.css" rel="stylesheet">
 

@@ -17,8 +17,7 @@ for ($i = 0; $i < 20; $i++) {
     $description = $listeDescription[rand(0, count($listeDescription) - 1)];
     $immatriculation = $listeImmatriculation[rand(0, count($listeImmatriculation) - 1)];
     $latitude = random_float(45.984497, 46.534108);
-    $longitude = random_float(-1.030135, 0.198473);
-    var_dump($longitude);
+    $longitude = random_float(-1.030135, 0.198473);    
     $connect->beginTransaction();
     try {
         $req = $connect->prepare("INSERT INTO vehicule (description,immatriculation,latitude,longitude) VALUES (?,?,?,?) ");
