@@ -8,7 +8,9 @@ and open the template in the editor.
     <div class='row'>
 
         <main class="main">
-            Bienvenue sur cette application regroupants quelques compétences
+            <h3>
+                Bienvenue sur cette application regroupants quelques compétences
+            </h3>
         </main>
 
     </div>

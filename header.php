@@ -23,12 +23,12 @@ $active='class="active"';
             <div class="container">
                 <ul class="nav navbar-nav">
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "Accueil") echo $active ?>><a href="?p=Accueil">Accueil</a></li>
-                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 2) echo $active ?>><a href="?p=2">Présentation</a></li>                   
-                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 6) echo $active ?>><a href="?p=6">HTML/CSS</a></li>
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == "Présentation") echo $active ?>><a href="?p=Présentation">Présentation</a></li>                   
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == "html") echo $active ?>><a href="?p=html">HTML/CSS</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "Javascript") echo $active ?>><a href="?p=Javascript">Javascript/JQuery</a></li>                    
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "PHP") echo $active ?>><a href="?p=PHP">PHP</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "analyse") echo $active ?>><a href="?p=analyse">Analyse/Conception</a></li>
-                    <li <?php if (isset($_GET['p']) && $_GET['p'] == 10) echo $active ?>><a href="?p=Liens">Liens</a></li>
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == "Liens") echo $active ?>><a href="?p=Liens">Liens</a></li>
 
                 </ul>
             </div>

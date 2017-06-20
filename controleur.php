@@ -2,6 +2,12 @@
 
 if (isset($_GET['p']) && $_GET['p'] == "Accueil") {
     include '/vues/Accueil.php';
+} elseif (isset($_GET['p']) && $_GET['p'] == "html") {
+    include '/vues/html.php';
+} elseif (isset($_GET['p']) && $_GET['p'] == "Présentation") {
+    include '/vues/presentation.php';
+} elseif (isset($_GET['p']) && $_GET['p'] == "SQL") {
+    include '/vues/SQL.php';
 } elseif (isset($_GET['p']) && $_GET['p'] == "PHP") {
     include '/vues/PHP.php';
 } elseif (isset($_GET['p']) && $_GET['p'] == "Javascript") {

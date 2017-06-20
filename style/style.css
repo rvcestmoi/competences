@@ -8,6 +8,25 @@ and open the template in the editor.
     Author     : RV
 */
 
+.photoProfil{
+    width: 300px;
+
+}
+
+#mapPresentation{
+    height: 200px;    
+}
+
+.lienCv{
+
+    background-color: lightcyan;
+}
+
+.jumbotron{
+
+    background-color: #fffda7;
+    height: 450px;
+}
 .liste{
     margin: 15px;
     background-color: rgb(254,189,97);
@@ -37,8 +56,8 @@ and open the template in the editor.
 }
 
 body{
-    
-    
+
+
 }
 
 .analyse{
