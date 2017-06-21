@@ -26,6 +26,7 @@ $active='class="active"';
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "Présentation") echo $active ?>><a href="?p=Présentation">Présentation</a></li>                   
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "html") echo $active ?>><a href="?p=html">HTML/CSS</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "Javascript") echo $active ?>><a href="?p=Javascript">Javascript/JQuery</a></li>                    
+                    <li <?php if (isset($_GET['p']) && $_GET['p'] == "SQL") echo $active ?>><a href="?p=SQL">SQL</a></li>                    
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "PHP") echo $active ?>><a href="?p=PHP">PHP</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "analyse") echo $active ?>><a href="?p=analyse">Analyse/Conception</a></li>
                     <li <?php if (isset($_GET['p']) && $_GET['p'] == "Liens") echo $active ?>><a href="?p=Liens">Liens</a></li>

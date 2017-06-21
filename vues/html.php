@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="html jumbotron">
+        <div class="html">
             <div class="col-md-6"> 
                 <ul>
                     <li>
@@ -21,10 +21,7 @@
                     <li>
                         <h3>Creation de sites à la demande</h3></li>
                 </ul>
-                
             </div>
-
         </div>
     </div>
-
 </div>

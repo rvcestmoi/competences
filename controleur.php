@@ -19,6 +19,8 @@ if (isset($_GET['p']) && $_GET['p'] == "Accueil") {
 //Controleur spécifiques    
 } elseif (isset($_GET['php'])) {
     require "/vues/PHP/" . $_GET['php'];
+} elseif (isset($_GET['sql'])) {
+    require "/vues/SQL/" . $_GET['sql'];
 } elseif (isset($_GET['javascript'])) {
     require "/vues/Javascript/" . $_GET['javascript'];
 } elseif (isset($_GET['analyse'])) {
