@@ -11,7 +11,7 @@ $vehicules = $connect->query("SELECT * FROM vehicule")->fetchAll();
                     <br>
 
                     <?php
-                    echo '<form name="vehiculesForm" method = "post" action="">';
+                    echo '<form name="vehiculesForm" method = "get" action="">';
                     echo '<select name="vehicules">';
                     foreach ($vehicules as $vehicule) {
                         echo "<option value=" . $vehicule['id'] . ">" . $vehicule['immatriculation'] . "</option>";
@@ -27,8 +27,5 @@ $vehicules = $connect->query("SELECT * FROM vehicule")->fetchAll();
     </div>
 </div>
 <?php
-if (isset($_POST['soumettreVehicule']) && $_POST['soumettreVehicule'] == "OK") {
-    echo $_POST['vehicules'];
-}
-var_dump($_POST);
+
 ?>

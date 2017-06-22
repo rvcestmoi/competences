@@ -17,6 +17,9 @@ if (isset($_GET['p']) && $_GET['p'] == "Accueil") {
 } elseif (isset($_GET['p']) && $_GET['p'] == "Liens") {
     include '/vues/Liens.php';
 //Controleur spécifiques    
+} elseif (isset($_GET['vehicules'])) {
+    require "/vues/Camion/identite.php";
+    
 } elseif (isset($_GET['php'])) {
     require "/vues/PHP/" . $_GET['php'];
 } elseif (isset($_GET['sql'])) {
