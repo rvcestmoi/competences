@@ -8,7 +8,7 @@ $min = $connect->query("SELECT min(id) FROM vehicule")->fetch();
 $max = $connect->query("SELECT max(id) FROM vehicule")->fetch();
 //var_dump($min[0]);
 //var_dump($max[0]);
-$randVehicule = rand(intval($min[0]), intval($max[0]));
+//$randVehicule = rand(intval($min[0]), intval($max[0]));
 
 
 //var_dump($randVehicule);
@@ -28,12 +28,12 @@ for ($i = 0; $i < 20; $i++) {
     $remarques = $listeDescription[rand(0, count($listeDescription) - 1)];
     $kilometrage = rand(10000, 250000);
     $titre = "Titre aléatoire n°" . rand(1, 500);
-    $vehicule = $randVehicule;
+    //$vehicule = $randVehicule;
     //$utilisateur = 40;
     $connect->beginTransaction();
     try {
         $req = $connect->prepare("INSERT INTO entretien (remarques,titre,killometrage,vehicule,utilisateur) VALUES (?,?,?,?,?) ");
-        $req->execute(array($remarques, $titre, $kilometrage, $vehicule, $utilisateur));
+        $req->execute(array($remarques, $titre, $kilometrage, rand(intval($min[0]), intval($max[0])), $utilisateur));
         $connect->commit();
         echo 'Tout s’est bien passé.';
     } catch (Exception $e) { //en cas d’erreur

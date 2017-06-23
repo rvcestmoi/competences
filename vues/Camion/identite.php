@@ -1,28 +1,46 @@
 <?php
-
-$vehicule = $connect->query("SELECT * FROM vehicule where vehicule.id=".$_GET['vehicules'])->fetch();
-//var_dump($vehicule);
+$vehicule = $connect->query("SELECT * FROM vehicule where vehicule.id=" . $_GET['vehicules'])->fetch();
+$entretiens = $connect->query("SELECT * FROM entretien where vehicule=" . $_GET['vehicules'])->fetchAll();
+//var_dump($entretiens);
 ?>
 
 <div class="container">
-    <div class="row">
-        <div class="presentation jumbotron">
+
+    <div class="presentation jumbotron">
+        <div class="row">
             <div class="col-md-6">
-                <?php echo $vehicule['description'] ?>
-            </div>
+                <div>
+                    <strong>Description du vehicule</strong><br><br>
+                    <?php echo $vehicule['description'] ?>
+                </div></div>
             <div class="col-md-6">
+                <strong>Localisation du vehicule (immatriculation n°<?php echo $vehicule['immatriculation'] ?>) :</strong>
+                <br>
+                <br>
                 <div id="mapPresentation" ></div>
                 <br>        
 
             </div>
-            
+
         </div>
-    </div>
-    <div class=" lienCv row">
-        <a href="#"><div>
-                <img src="img/Presentation/fleche.png" alt="flechecv" style="height: 15px;"/><span> Par ici pour suivre mon cv</span>
+
+        <div class="row">
+            <div class="col-md-6">
+                <strong> Liste des entretiens effectués sur ce vehicule :</strong>
+                <form action="" method="get">
+                    <select  name="entretien">
+                        <?php
+                        foreach ($entretiens as $entretien) {
+                            echo "<option value=" . $entretien['id'] . ">" . $entretien['titre'] . " </option>";
+                        }
+                        ?>
+                    </select>
+                    <input type = "submit">
+                </form>
+                <br>
+                <br>
             </div>
-        </a>
+        </div>
     </div>
 </div>
 
@@ -30,7 +48,7 @@ $vehicule = $connect->query("SELECT * FROM vehicule where vehicule.id=".$_GET['v
 
 <script>
     function initMap() {
-        var uluru = {lat:<?php echo $vehicule['latitude']?>, lng:<?php echo $vehicule['longitude']?>};
+        var uluru = {lat:<?php echo $vehicule['latitude'] ?>, lng:<?php echo $vehicule['longitude'] ?>};
         var map = new google.maps.Map(document.getElementById('mapPresentation'), {
             zoom: 11,
             center: uluru
@@ -38,7 +56,7 @@ $vehicule = $connect->query("SELECT * FROM vehicule where vehicule.id=".$_GET['v
         var marker = new google.maps.Marker({
             position: uluru,
             map: map,
-            title: <?php echo '"Immatriculation: '.($vehicule['immatriculation']).'"' ?>,
+            title: <?php echo '"Immatriculation: ' . ($vehicule['immatriculation']) . '"' ?>,
             animation: google.maps.Animation.DROP
         });
     }

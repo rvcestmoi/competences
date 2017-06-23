@@ -3,20 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/Competences/head.php</file>
-            <file>file:/C:/wamp64/www/Competences/header.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/html.php</file>
-            <file>file:/C:/wamp64/www/Competences/style/style.css</file>
-            <file>file:/C:/wamp64/www/Competences/vues/SQL.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/SQL/recherche%20vehicules.php</file>
-            <file>file:/C:/wamp64/www/Competences/index.php</file>
-            <file>file:/C:/wamp64/www/Competences/controleur.php</file>
-            <file>file:/C:/wamp64/www/Competences/js/custom.js</file>
-            <file>file:/C:/wamp64/www/Competences/vues/Javascript/API%20Google%20maps.php</file>
+            <file>file:/C:/wamp64/www/Competences/fonctions/admin/liste.php</file>
             <file>file:/C:/wamp64/www/Competences/vues/Accueil.php</file>
             <file>file:/C:/wamp64/www/Competences/vues/SQL/liste%20vehicules.php</file>
             <file>file:/C:/wamp64/www/Competences/vues/Presentation.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/PHP.php</file>
+            <file>file:/C:/wamp64/www/Competences/vues/Admin/ajout%20de%20vehicules.php</file>
+            <file>file:/C:/wamp64/www/Competences/index.php</file>
+            <file>file:/C:/wamp64/www/Competences/vues/Camion/identite.php</file>
+            <file>file:/C:/wamp64/www/Competences/vues/Admin/ajoutEntretien.php</file>
+            <file>file:/C:/wamp64/www/Competences/js/custom.js</file>
+            <file>file:/C:/wamp64/www/Competences/controleur.php</file>
         </group>
     </open-files>
 </project-private>
