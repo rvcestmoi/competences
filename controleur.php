@@ -12,6 +12,8 @@ if (isset($_GET['p']) && $_GET['p'] == "Accueil") {
     include '/vues/PHP.php';
 } elseif (isset($_GET['p']) && $_GET['p'] == "Javascript") {
     include '/vues/Javascript.php';
+} elseif (isset($_GET['p']) && $_GET['p'] == "AppliVialtic") {
+    require '/vues/AppliVialtic/indexAppli.php';
 } elseif (isset($_GET['p']) && $_GET['p'] == "analyse") {
     include '/vues/AnalyseConception.php';
 } elseif (isset($_GET['p']) && $_GET['p'] == "Liens") {

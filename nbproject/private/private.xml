@@ -3,16 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/Competences/fonctions/admin/liste.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/Accueil.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/SQL/liste%20vehicules.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/Presentation.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/Admin/ajout%20de%20vehicules.php</file>
-            <file>file:/C:/wamp64/www/Competences/index.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/Camion/identite.php</file>
-            <file>file:/C:/wamp64/www/Competences/vues/Admin/ajoutEntretien.php</file>
-            <file>file:/C:/wamp64/www/Competences/js/custom.js</file>
-            <file>file:/C:/wamp64/www/Competences/controleur.php</file>
+            <file>file:/C:/wamp64/www/competences/fonctions/config.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/Admin/ajoutEntretienManuel.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/Camion/identite.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/Admin/ajoutEntretien.php</file>
+            <file>file:/C:/wamp64/www/competences/fonctions/fonctions.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/Liens.php</file>
+            <file>file:/C:/wamp64/www/competences/style/style.css</file>
+            <file>file:/C:/wamp64/www/competences/vues/Admin.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/AppliVialtic/indexAppli.php</file>
+            <file>file:/C:/wamp64/www/competences/fonctions/admin/liste.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/Camion/entretien.php</file>
+            <file>file:/C:/wamp64/www/competences/vues/Admin/ajout%20de%20vehicules.php</file>
         </group>
     </open-files>
 </project-private>

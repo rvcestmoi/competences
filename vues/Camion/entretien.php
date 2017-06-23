@@ -1,6 +1,7 @@
 <?php
 $entretien = $connect->query("SELECT * FROM entretien where entretien.id=" . $_GET['entretien'])->fetch();
-//var_dump($entretiens);
+$user = $connect->query("SELECT * FROM utilisateur where utilisateur.id=".$entretien['utilisateur'])->fetch();
+//var_dump($user);
 $datetime = explode(' ', $entretien['dateEntretien']);
 $date_en = $datetime[0];
 $time = $datetime[1];
@@ -32,7 +33,7 @@ $date = $date_fr[2] . '/' . $date_fr [ 1] . '/' . $date_fr[0];
         </div>
         <div>
             <strong>Entretien effectué le </strong>
-            <?php echo $date_fr[2] . "/" . $date_fr[1] . "/" . $date_fr [ 0] . " à " . $datetime [ 1]; ?>
+            <?php echo $date_fr[2] . "/" . $date_fr[1] . "/" . $date_fr [ 0] . " à " . $datetime [ 1]. " par <strong> ".$user['prenom']." ".$user['nom']."</strong>"; ?>
         </div>
         <br>
         <br>

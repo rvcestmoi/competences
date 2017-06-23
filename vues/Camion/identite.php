@@ -1,6 +1,6 @@
 <?php
 $vehicule = $connect->query("SELECT * FROM vehicule where vehicule.id=" . $_GET['vehicules'])->fetch();
-$entretiens = $connect->query("SELECT * FROM entretien where vehicule=" . $_GET['vehicules'])->fetchAll();
+$entretiens = $connect->query("SELECT * FROM entretien where vehicule=" . $_GET['vehicules']." ORDER BY dateEntretien DESC")->fetchAll();
 //var_dump($entretiens);
 ?>
 
@@ -9,6 +9,10 @@ $entretiens = $connect->query("SELECT * FROM entretien where vehicule=" . $_GET[
     <div class="presentation jumbotron">
         <div class="row">
             <div class="col-md-6">
+
+                <div class='col-xs-2'>
+                    <img class="img-responsive" src="img/AppliVialtic/CamionFlatdesign.png" style="height: 50px;"/>
+                </div>
                 <div>
                     <strong>Description du vehicule</strong><br><br>
                     <?php echo $vehicule['description'] ?>

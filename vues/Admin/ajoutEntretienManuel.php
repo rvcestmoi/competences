@@ -23,7 +23,7 @@ $utilisateur = $user[0];
                                 }
                                 ?>
                             </select></p>
-                        <input name="submitEntretien" value="submited" type ='submit'>
+                        <input name="submitEntretien" value="OK" type ='submit'>
                     </div>
                 </form>
 
@@ -34,10 +34,11 @@ $utilisateur = $user[0];
 
 
 <?php
-if (isset($_POST["submitEntretien"]) && $_POST["submitEntretien"] == "submited") {
+if (isset($_POST["submitEntretien"]) && $_POST["submitEntretien"] == "OK") {
 
     if (!empty($_POST["titreForm"]) && !empty($_POST["remarquesForm"]) && is_numeric($_POST["kiloForm"]) && !empty($_POST["enretienVehicule"])) {
         //Tout est valide (les champs sont remplis et le kilometrage est numerique)
+        echo "essai";
         $connect->beginTransaction();
         try {
         $req = $connect->prepare("INSERT INTO entretien (remarques,titre,killometrage,vehicule,utilisateur) VALUES (?,?,?,?,?) ");
