@@ -11,7 +11,7 @@
                     <ul>
                         <li>33 ans</li>
                         <li>Passionné d'informatique</li>
-                        <li>Curiosité d'esprit</li>
+                        <li>Curieux</li>
                         <li>Anglais courant</li>
                     </ul>
                 </strong>
@@ -21,7 +21,8 @@
         </div>
     </div>
     <div class=" lienCv row">
-        <a href="#"><div>
+        <a href="img/Presentation/HerveRouillardCV.pdf">
+            <div>
                 <img src="img/Presentation/fleche.png" alt="flechecv" style="height: 15px;"/><span> Par ici pour suivre mon cv</span>
             </div>
         </a>
