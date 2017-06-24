@@ -1,23 +1,20 @@
-<?php?>
-
 <?php ?>
 
-
+<?php ?>
 <div class="container">
-    <div class="row">
-        <div class="html jumbotron">
-            <div class="col-md-6"> 
-                <ul>
-                    <li>
-                        <h3>Création de bases de données</h3></li>
-                    <li>
-                        <h3>Entretien des bases</h3></li>
-                    <li>
-                        <h3>Requètes</h3></li>
-                </ul>
-            </div>       
+    <div class="sql row">
+        <div class="col-md-6"> 
+            <ul>
+                <li>
+                    <h3>Création de bases de données</h3></li>
+                <li>
+                    <h3>Entretien des bases</h3></li>
+                <li>
+                    <h3>Création de requètes</h3></li>
+            </ul>
+        </div>       
 
-        </div>
+
     </div>
 
 </div>
@@ -26,7 +23,7 @@
         <div class='col-xs-6 col-xs-offset-3'>
             <div class="container">
                 <main>
-                    Voici la liste des exemples PHP disponibles :
+                    Voici la liste des exemples SQL disponibles :
                     <br>
 
                     <?php

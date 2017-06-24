@@ -1,8 +1,7 @@
 <?php
 
-if (isset($_GET['p']) && $_GET['p'] == "Accueil") {
-    include '/vues/Accueil.php';
-} elseif (isset($_GET['p']) && $_GET['p'] == "html") {
+
+if (isset($_GET['p']) && $_GET['p'] == "html") {
     include '/vues/html.php';
 } elseif (isset($_GET['p']) && $_GET['p'] == "Présentation") {
     include '/vues/presentation.php';
@@ -36,5 +35,5 @@ if (isset($_GET['p']) && $_GET['p'] == "Accueil") {
 } elseif (isset($_GET['admin'])) {
     require "/vues/Admin/" . $_GET['admin'];
 } else
-    include '/vues/Accueil.php';
+    include '/vues/Presentation.php';
 ?>

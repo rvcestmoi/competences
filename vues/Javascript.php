@@ -1,7 +1,7 @@
 <div class="container">
     <div class='row'>
         <div class='col-xs-6 col-xs-offset-3'>
-            <div class="container">
+            <div class="container">  
                 <main>
                     Voici la liste des exemples Javascript disponibles :
                     <br>
@@ -25,3 +25,4 @@
             </div>
         </div>
     </div>
+</div>
